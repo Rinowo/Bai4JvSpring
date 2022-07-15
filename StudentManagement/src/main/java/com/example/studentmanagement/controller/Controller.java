@@ -82,7 +82,7 @@ public class Controller {
         return new ResponseEntity<>(studentService.getStudentEmail(email), HttpStatus.OK);
     }
 
-    //http://localhost:8080/student/findEmail?phone=0369122828
+    //http://localhost:8080/student/findPhone?phone=0369122828
     @GetMapping("/student/findPhone")
     public ResponseEntity<List<Student>> getByPhone(@RequestParam String phone) {
         return new ResponseEntity<>(studentService.getStudentPhone(phone), HttpStatus.OK);

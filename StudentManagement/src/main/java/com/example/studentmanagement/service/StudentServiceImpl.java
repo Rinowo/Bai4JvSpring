@@ -53,6 +53,5 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> getStudentPhone(String phone) {
         return studentRepository.findByPhone(phone);
     }
-
 }
 
